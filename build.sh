@@ -6,7 +6,11 @@ CUSTOM_RESOURCE_NAME="myresource"
 CUSTOM_RESOURCE_VERSION="v1"
 
 # retrieve the code-generator scripts and bins
-go get -u k8s.io/code-generator/...
+#go get k8s.io/code-generator
+#go get k8s.io/apimachinery
+#go get k8s.io/gengo
+#go get -u golang.org/x/tools/cmd/goimports
+#go get k8s.io/klog
 cd $GOPATH/src/k8s.io/code-generator
 
 # run the code-generator entrypoint script
